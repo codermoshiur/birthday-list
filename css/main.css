@@ -1,0 +1,87 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --color-bg-1: rgb(248, 157, 206);
+  --color-bg-2: rgb(255, 255, 255);
+  --color-text-1: #333;
+  --color-text-2: #777;
+  --color-text-3: #fff;
+  --color-btn-1: #e23cd9;
+  --color-btn-2: #f07acc;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  background-color: var(--color-bg-1);
+}
+
+main {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+}
+
+.birthday {
+  background-color: var(--color-bg-2);
+  max-width: 22.5rem;
+  border-radius: 0.625rem;
+  padding: 1.5rem;
+  max-width: 360p;
+}
+.birthday__title {
+  color: var(--color-text-1);
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+}
+.birthday__list {
+  margin: 1.5rem 0;
+  padding: 0;
+  list-style-type: none;
+}
+.birthday__list-item {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+.birthday__list-item:last-child {
+  margin-bottom: 0;
+}
+
+.birthday__list-img {
+  width: 3.125rem;
+  height: 3.125rem;
+  border-radius: 50%;
+}
+.birthday__list-info-title {
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  font-size: 1.125rem;
+}
+.birthday__list-info-text {
+  color: var(--color-text-2);
+}
+.birthday__btn {
+  padding: 1rem;
+  background: linear-gradient(to right, var(--color-btn-1), var(--color-btn-2));
+  border: 0;
+  font-size: 1.125rem;
+  width: 100%;
+  cursor: pointer;
+  border-radius: 0.3125rem;
+  color: var(--color-text-3);
+}
+
+.birthday__btn:hover {
+  opacity: 0.9;
+}
+.birthday__btn:active {
+  background: linear-gradient(to left, var(--color-btn-1), var(--color-btn-2));
+}
