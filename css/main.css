@@ -33,7 +33,6 @@ main {
   max-width: 22.5rem;
   border-radius: 0.625rem;
   padding: 1.5rem;
-  max-width: 360p;
 }
 .birthday__title {
   color: var(--color-text-1);
